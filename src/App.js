@@ -36,14 +36,14 @@ class ShopItemCl extends Component{
     }
 
     render(){
-        const {user} = this.props;
+        const user = this.props.item;
         return(
         <>
             <div class="main-content">
-              <h2>{item.brand}</h2>
-              <h1>{item.title}</h1>
-              <h3>{item.description}</h3>
-              <div class="description">{item.descriptionFull}</div>
+              <h2>{user.brand}</h2>
+              <h1>{user.title}</h1>
+              <h3>{user.description}</h3>
+              <div class="description">{user.descriptionFull}</div>
               <div class="highlight-window mobile"><div class="highlight-overlay"></div></div>
               <div class="divider"></div>
               <div class="purchase-info">
